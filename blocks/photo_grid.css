@@ -12,22 +12,26 @@
   max-width: 284px;
   max-height: 213px;
 }
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1200px) {
   .photo_grid {
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    margin: 64px auto 84px;
+    margin: 64px auto 88px;
   }
   .photo_grid__item {
     max-width: 352px;
     max-height: 264px;
   }
 }
-@media screen and (max-with: 400px) {
+@media screen and (max-width: 400px) {
   .photo_grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    margin: 38px auto 62px;
+    margin: auto;
+    margin-top: 38px;
+    margin-bottom: 62px;
+    max-width: 288px;
+    grid-template-columns: 288px;
+    grid-template-rows: repeat(8, 216px);
     grid-row-gap: 12px;
   }
   .photo_grid__item {
