@@ -3,6 +3,9 @@
   height: 740px;
   margin: 92px auto 92px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cover__background {
@@ -31,7 +34,7 @@
   font-weight: 900;
   line-height: 76px;
   text-align: center;
-  margin: 0;
+  margin: 0 0 32px 0;
 }
 .cover__information {
   font-family: Inter;
@@ -39,7 +42,7 @@
   font-weight: normal;
   line-height: 22px;
   text-align: center;
-  margin: 32px auto 32px;
+  margin: 0;
 }
 .cover__button {
   height: 48px;
@@ -52,25 +55,31 @@
   border: none;
   color: #fff;
   background-color: #0278fe;
+  margin-top: 32px;
 }
 
 .cover__button:hover {
   background-color: #0063d2;
 }
-.cover__background:hover {
+.cover:hover .cover__background {
   opacity: 20%;
 }
+
 @media screen and (max-width: 1200px) {
   .cover {
     width: 768px;
+    width: 100%;
     margin: 92px auto 88px;
   }
 
   .cover__about {
-    margin: 246px 56px;
+    margin: 0;
+  }
+  .cover__background {
+    object-fit: cover;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   .cover {
     width: 320px;
     height: 254px;
@@ -85,15 +94,17 @@
   .cover__about-title {
     font-size: 32px;
     line-height: 35px;
+    margin-bottom: 16px;
   }
   .cover__information {
     font-size: 14px;
     line-height: 16px;
     width: 280px;
     height: 48px;
-    margin: 16px auto 16px;
+    margin: 0;
   }
   .cover__button {
     min-height: 48px;
+    margin-top: 16px;
   }
 }
