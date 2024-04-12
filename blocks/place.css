@@ -77,6 +77,9 @@
   border-radius: 4px;
   grid-area: link;
 }
+.place__link:hover {
+  background-color: #0063d2;
+}
 @media screen and (max-width: 1200px) {
   .place {
     max-width: 720px;
