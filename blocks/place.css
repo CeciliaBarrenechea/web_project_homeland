@@ -131,6 +131,11 @@
     text-align: left;
     margin: auto;
   }
+  .place__title_size_L {
+    grid-column: 1/2;
+    width: 100%;
+    margin: auto;
+  }
 
   .place__subtitle {
     max-width: 288px;
@@ -139,6 +144,7 @@
   }
   .place__image {
     max-width: 320px;
+    width: 100%;
   }
   .place__paragraph {
     max-width: 288px;
